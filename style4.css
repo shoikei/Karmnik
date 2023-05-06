@@ -2,9 +2,10 @@
     margin: 0;
     padding: 0;
 }
+/*/Baner i nav bar/*/
 .banner img{
     max-width: 100%;
-    left: 140px;
+    left: 18%;
     top: -1000px;
     position: sticky;
     -webkit-box-shadow: 5px 5px 28px 12px #000000; 
@@ -68,14 +69,15 @@ body{
 
 
 
-
+/* Zawartosc */
 
 #menuglowne{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     max-width: 100%;
     margin: 0 auto;
+    padding-bottom: 30px;
     padding-top: 60px;
     justify-self: center;
     align-self: center;
@@ -182,6 +184,167 @@ border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.198);
     border-radius: 15px;
 }
-.box9{
+/* media duze */
+@media(max-width:1086px){
+
+    #menuglowne{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        max-width: 90%;
+        margin: 0 auto;
+        padding-top: 60px;
+        justify-self: center;
+        align-self: center;
+        background-color: #68686871;
+        grid-gap: 20px;
+    }
+    #menuglowne div{
+        padding: 10px;
+        align-self: center;
+        justify-self: center;
+    }
+    .button {
+        background-color: #647364;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        position: relative;
+        left:25%
+      }
+}
+/* media male */
+@media(max-width:800px){
+
+    #menuglowne{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        max-width: 80%;
+        margin: 5 auto;
+        padding-top: 60px;
+        justify-self: center;
+        align-self: center;
+        background-color: #68686871;
+        grid-gap: 20px;
+    }
+    #menuglowne div{
+        padding: 10px;
+        align-self: center;
+        justify-self: center;
+    }
+    .button {
+        background-color: #647364;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        position: relative;
+        left:25%
+      }
+}
+
+
+/* footer */
+
+#dolneinfo{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(100px, auto);
+    max-width: 2000px;
+    grid-gap: 30px;
+    margin: 0 auto;
+    background-color: rgba(32, 32, 32, 0.605);
     text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+#dolneinfo div{
+    padding: 5px;
+}
+.tx2{
+    list-style: none;
+    display: inline-block;
+    align-self: self-start;
+    justify-self: center;
+    font-size: 13px;
+    
+    
+}
+.tx2 a:hover{
+    opacity: 0.7;
+    
+}
+.tx5{
+    align-self: flex-end;
+    justify-self: center;
+    font-size: 13px;
+}
+.tx6{
+    align-self: self-end;
+    justify-self: center;
+    font-size: 13px;
+}
+.tx1{
+    font-size: 13px;
+}
+.tx3{
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+/*// keyframes //*/
+@keyframes toright{
+    from{transform: translatex(-80px);
+    opacity: 0;}
+    to{transform: translatex(0px);
+    opacity: 1;}
+    
+}
+@keyframes toleft{
+    from{transform: translateX(50px);
+    opacity: 0;}
+    to{transform: translateX(00px);
+    opacity: 1;}
+}
+
+@keyframes showup{
+    0%{transform: translateY(-1200px);
+    opacity: 0;}
+    90%{transform: translateY(00px);}
+    100%{transform: translateY(0px);
+    opacity: 1;}
+}
+@keyframes showup1{
+    0%{transform: translateY(-1200px);
+    opacity: 0;}
+    50%{transform: translateY(00px);
+    opacity: 0.4;}
+    70%{transform: translateY(0px);
+        opacity: 0.9;}
+    100%{transform: translateY(0px);
+    opacity: 0.9;}
+}
+@keyframes h1op{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
